@@ -15,7 +15,7 @@ public class NetworkThrottle {
 	@Test
 	public void throughputTest() throws IOException {
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\svigneshram\\Downloads\\chromedriver_win32 (3)\\chromedriver.exe");
+				"********Your Chromedriver Path********");
 		ChromeDriver driver = new ChromeDriver();
 
 		CommandExecutor executor = driver.getCommandExecutor();
@@ -33,7 +33,7 @@ public class NetworkThrottle {
 
 		executor.execute(cmd);
 
-		driver.get("http://google.com");
+		driver.get("http://youtube.com");
 		
 		driver.quit();
 	}
